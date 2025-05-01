@@ -1,0 +1,5 @@
+<root>
+    <item name='javafx.fxml.FXMLLoader int compareJFXVersions(java.lang.String, java.lang.String)'>
+        <annotation name='java.lang.Deprecated'/>
+    </item>
+</root>

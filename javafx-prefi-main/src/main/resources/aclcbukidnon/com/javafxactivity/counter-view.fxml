@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17.0.12"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="aclcbukidnon.com.javafxactivity.controllers.CounterController"
+            style="-fx-background-color: linear-gradient(to bottom, #1e1e1e, #2d2d2d);">
+   <center>
+      <VBox alignment="CENTER" spacing="20">
+         <TextField fx:id="inputField" promptText="Enter starting number"
+                    style="-fx-font-size: 24px; -fx-pref-width: 200px; -fx-text-alignment: center;"
+                    alignment="CENTER"/>
+         <Label fx:id="labelCount" text="0"
+                style="-fx-font-size: 96px; -fx-text-fill: white; -fx-font-family: 'Segoe UI Semibold';"/>
+         <HBox spacing="20" alignment="CENTER">
+            <Button fx:id="startButton" text="Start" onAction="#onStartClick"
+                    style="-fx-background-color: green; -fx-text-fill: white; -fx-font-size: 20px; -fx-background-radius: 10;"/>
+            <Button fx:id="pauseButton" text="Pause" onAction="#onPauseClick"
+                    style="-fx-background-color: orange; -fx-text-fill: white; -fx-font-size: 20px; -fx-background-radius: 10;"/>
+            <Button fx:id="stopButton" text="Stop" onAction="#onStopClick"
+                    style="-fx-background-color: red; -fx-text-fill: white; -fx-font-size: 20px; -fx-background-radius: 10;"/>
+         </HBox>
+      </VBox>
+   </center>
+   <padding>
+      <Insets top="40" bottom="40" left="40" right="40"/>
+   </padding>
+</BorderPane>

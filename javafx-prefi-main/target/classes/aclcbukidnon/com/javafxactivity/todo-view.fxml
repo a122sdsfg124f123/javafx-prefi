@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="aclcbukidnon.com.javafxactivity.controllers.TodoController"
+      prefHeight="500.0" prefWidth="400.0" spacing="20.0"
+      style="-fx-background-color: #f4f4f4; -fx-padding: 20;">
+
+   <Label text="To-Do List" style="-fx-font-size: 24px; -fx-text-fill: #333;" />
+
+   <HBox spacing="10">
+      <TextField fx:id="todoInput" promptText="Enter new task..." prefWidth="200.0"
+                 style="-fx-background-radius: 10; -fx-padding: 10;" />
+      <Button text="Add" onAction="#onCreateClick" prefHeight="42.0"
+              style="-fx-background-color: #0f62fe; -fx-text-fill: white; -fx-background-radius: 10;" />
+      <Button text="Delete" onAction="#onDeleteClick" prefHeight="42.0"
+              style="-fx-background-color: #ff5c5c; -fx-text-fill: white; -fx-background-radius: 10;" />
+   </HBox>
+
+   <ListView fx:id="todoList" prefHeight="350.0"
+             style="-fx-background-radius: 10; -fx-background-color: white;" />
+</VBox>
